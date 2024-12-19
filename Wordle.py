@@ -1,4 +1,3 @@
-import random as r
 import enchant
 import wonderwords
 
@@ -8,18 +7,9 @@ class Style():
   BLUE = "\033[34m"
   RESET = "\033[0m"
 
-
-'''
-dictionary = ["apple", "house", "light", "bread", "plant", "water", "grass", "tiger", "chair", "table", "money", "sleep", "world", "cloud", "space", "sweet", "phone", "music", "heart", "green", "stone", "cloud", "river", "laugh", "happy", "angry", "truck", "horse", "apple", "dance", "quick", "swing", "party", "storm", "ocean", "sunny", "silver", "shadow", "peach", "tiger", "lucky", "kingf", "booky", "knife", "honey", "green", "blend", "floor", "peach", "radio", "blood", "heart", "media", "drunk", "grasp", "music", "water", "blend", "swift", "limey", "tree", "plants", "brick", "laugh", "waves", "witch", "stone", "court", "barky", "crisp", "lappy", "smart", "learn", "sound", "magic", "flaty", "turny", "fort", "sharp", "blaze", "cooly", "track", "bread", "hunt", "brand", "clear", "unite", "clean", "dream", "shift", "glass", "watch", "frost", "pasty", "drum", "alien", "clear", "sunny", "forest", "cloudy", "slice", "ship", "rock", "dirt", "clown", "wind", "honest", "worth", "sick", "loud", "raw", "edge", "wave", "party", "cricket", "link", "slice", "print", "chief", "beach"]
-num = r.randint(0,100)
-actual_word = list(reversed(dictionary [num]))'''
-
 w = wonderwords.RandomWord()
 actual_word = list(reversed(str(w.word(word_min_length=10,word_max_length=10))))
-print(actual_word)
-
 d = enchant.Dict("en_US")
-
 
 
 counter = 0
